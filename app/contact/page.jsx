@@ -77,13 +77,7 @@ const Contact = () => {
                 <div className=" flex-1">
                   <p className="text-white/60"> {item.title} </p>
                   {
-                    (item.title === 'Phone') ? 
-                    <a href={`tel:${item.content}`} className="text-accent text-xl hover:text-white hover:transition-all duration-500"> {item.content} </a>
-
-                    : (item.title === 'Email') ? 
-                    <a href={`mailto:${item.content}`} className="text-accent text-xl hover:text-white hover:transition-all duration-500"> {item.content} </a> 
-                    
-                    : <h3 className="text-xl"> {item.content} </h3>
+                    (item.title === 'Phone') ? <a href={`tel:${item.content}`} className="text-accent text-xl hover:text-white hover:transition-all duration-500"> {item.content} </a> : (item.title === 'Email') ? <a href={`mailto:${item.content}`} className="text-accent text-xl hover:text-white hover:transition-all duration-500"> {item.content} </a> : <h3 className="text-xl"> {item.content} </h3>
                   }
                 </div>
               </li>
