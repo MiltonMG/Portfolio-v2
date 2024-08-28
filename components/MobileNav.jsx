@@ -27,8 +27,8 @@ const MobileNav = () => {
                     {/* LOGO */}
                     <div className="flex">
                         <Link href={"/"}>
-                            <h1 className="text-3xl font-semibold">
-                                Milton<span className="text-accent">.</span>
+                            <h1 className="text-3xl font-bold underline underline-offset-8 decoration-[#00Ff99]">
+                                Milton<span className="text-accent">MG</span>
                             </h1>
                         </Link>
                     </div>

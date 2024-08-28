@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi"
 import Socials from "@/components/Socials"
 import Photo from "@/components/Photo"
 import Stats from "@/components/Stats"
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 const page = () => {
   return (
@@ -30,14 +31,36 @@ const page = () => {
             <div className=" flex flex-col xl:flex-row items-center gap-8">
               
               {/* CV */}
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+              {/* <a href="/assets/files/MiltonMartinez-CV.pdf" download="Milton-Martinez-CV.pdf"> */}
+
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="Download CV" />
+                </SelectTrigger>
+
+                <SelectContent>
+                  <SelectGroup>
+                    <a href="/assets/files/MiltonMartinez-CV.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
+                      <SelectLabel>English CV </SelectLabel>
+                    </a>
+                    <a href="/assets/files/MiltonMartinez-CV.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
+                      <SelectLabel>Spanish CV</SelectLabel>
+                    </a>
+                  </SelectGroup>
+                </SelectContent>
+
+              </Select>
+
+              {/* <Button variant="outline" size="sm" className="uppercase flex items-center gap-2">
                 <span> Download CV </span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </Button> */}
+
+              {/* </a> */}
 
               {/* Socials */}
               <div className="mb-8 xl:mb-0">
-                <Socials containerStyling='flex gap-6' iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500' />
+                <Socials containerStyling='flex gap-6' iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-white text-base hover:bg-accent hover:text-primary hover:transition-all duration-500' />
               </div>
 
             </div>

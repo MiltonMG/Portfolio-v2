@@ -11,7 +11,7 @@ import {
   FaDatabase
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiTypescript, SiMongodb, SiMysql, SiFirebase, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiMongodb, SiMysql, SiFirebase, SiExpress, SiBulma, SiBootstrap } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -137,6 +137,14 @@ const skills = {
       icon: <FaDatabase />
     },
     {
+      title: "Bulma",
+      icon: <SiBulma />
+    },
+    {
+      title: "Bootstrap",
+      icon: <SiBootstrap />
+    },
+    {
       title: "TailwindCSS",
       icon: <SiTailwindcss />
     },
@@ -254,14 +262,14 @@ const Resume = () => {
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
               </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4 mt-5">
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[40px] gap-5 mt-5">
                 {
                   skills.items.map((item, index) => {
                     return <li key={index} className="">
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
 
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                          <TooltipTrigger className="w-full h-[120px] bg-[#232329] rounded-xl flex justify-center items-center group">
                             <div className="text-6xl group-hover:text-accent">{item.icon}</div>
                           </TooltipTrigger>
 
