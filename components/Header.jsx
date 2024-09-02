@@ -10,7 +10,7 @@ export const Header = () => {
 
             {/* LOGO */}
             <Link href={"/"}>
-                <h1 className="text-4xl font-bold underline underline-offset-8 decoration-[#00Ff99]">
+                <h1 className="text-4xl font-bold">
                     Milton<span className="text-accent">MG</span>
                 </h1>
             </Link>

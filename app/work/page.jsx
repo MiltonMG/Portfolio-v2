@@ -124,8 +124,8 @@ const Work = () => {
                       <Link href={project.live} target='_blank'>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className='hover:bg-black transition-all duration-500 w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group'>
-                              <BsArrowUpRight className='text-white text-2xl group-hover:text-accent transition-all duration-500' />
+                            <TooltipTrigger className='hover:bg-black transition-all duration-500 w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group hover:scale-[1.2]'>
+                              <BsArrowUpRight className='text-white text-2xl group-hover:text-accent transition-all duration-500  hover:scale-[1.1]' />
                               <TooltipContent>Live Project</TooltipContent>
                             </TooltipTrigger>
                           </Tooltip>
@@ -135,8 +135,8 @@ const Work = () => {
                       <Link href={project.github} target='_blank'>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className='hover:bg-black transition-all duration-500 w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group'>
-                              <BsGithub className='text-white text-2xl group-hover:text-accent transition-all duration-500' />
+                            <TooltipTrigger className='hover:bg-black transition-all duration-500 w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group hover:scale-[1.2]'>
+                              <BsGithub className='text-white text-2xl group-hover:text-accent transition-all duration-500 hover:scale-[1.1]' />
                               <TooltipContent>Github Repository</TooltipContent>
                             </TooltipTrigger>
                           </Tooltip>
@@ -148,16 +148,16 @@ const Work = () => {
 
                 </div>
                 <div className='w-full xl:w-[50%]'>
-                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-xl cursor-pointer hover:scale-[0.98] transition-all duration-500'>
                     {/* Overlay */}
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     {/* image */}
-                    <div className='relative w-full h-full '>
+                    <div className='relative w-full h-full'>
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className='object-cover' />
+                        className='object-cover rounded-xl' />
                     </div>
                   </div>
                 </div>
