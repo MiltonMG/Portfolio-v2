@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { FiDownload } from "react-icons/fi"
-
-
 //Components
 import Socials from "@/components/Socials"
 import Photo from "@/components/Photo"
 import Stats from "@/components/Stats"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
+import WordChanger from "@/components/WordChanger"
 
 const page = () => {
   return (
@@ -20,7 +17,7 @@ const page = () => {
             
             <h1 className="h1 mb-6">
               {/* TODO: I have to find a way to change "Hello" word in different languages */}
-              Hello I'm <br/> <span className="text-accent">Milton</span>
+              <WordChanger />I'm <br/> <span className="text-accent">Milton</span>
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">

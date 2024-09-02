@@ -1,5 +1,8 @@
 "use client";
 
+import Swal from 'sweetalert2'
+// import 'sweetalert2/src/sweetalert2.scss'
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -66,7 +69,6 @@ const Contact = () => {
       process.env.NEXT_PUBLIC_PUBLIC_KEY // Public Key
     )
       .then((response) => {
-        alert('Email sent successfully');
         setFormData({
           firstname: '',
           lastname: '',
@@ -75,9 +77,26 @@ const Contact = () => {
           message: '',
         });
         setIsSending(false); // Restablecer isSending en false después del envío
+        Swal.fire({
+          title: 'Email sent successfully!',
+          text: 'Your email has been sent and received successfully.',
+          icon: 'success',
+          background: '#1D1C22',  // Cambia el color de fondo del alert
+          color: '#FFFFFF',           // Cambia el color del texto del alert
+          confirmButtonColor: '#3FFD99',  // Cambia el color del botón de confirmación
+          confirmButtonText: 'OK', // Cambia el texto del botón de confirmación
+        });
       }, (error) => {
-        alert('Failed to send email');
         setIsSending(false); // Restablecer isSending en false en caso de error
+        Swal.fire({
+          title: 'Failed to send email!',
+          text: 'There was an issue sending your email. Please try again later.',
+          icon: 'error',  // Icono de error
+          background: '#1D1C22',  // Color de fondo del alert
+          color: '#fff',  // Color del texto del alert
+          confirmButtonColor: '#e74c3c',  // Color del botón de confirmación (rojo)
+          confirmButtonText: 'Retry',  // Texto del botón de confirmación
+        });
       });
   };
 
