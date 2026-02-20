@@ -8,7 +8,7 @@ const stats = [
     { num: 3, text: "Years of Experience" },
     { num: 40, text: "repositories on Github" },
     { num: 3, text: "Companies I have worked" },
-    { num: 5, text: "Projects in this portfolio" },
+    { num: 4, text: "Projects in this portfolio" },
 ]
 
 const Stats = () => {
