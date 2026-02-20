@@ -7,7 +7,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 const socialNetworks = [
   { icon: <FiGithub />, path: 'https://github.com/MiltonMG', title: 'Github' },
   { icon: <FiLinkedin />, path: 'https://www.linkedin.com/in/miltongalindo', title: 'Linkedin' },
-  { icon: <FiInstagram />, path: 'https://www.instagram.com/miltonmg.sv/', title: 'Instagram' },
+  // { icon: <FiInstagram />, path: 'https://www.instagram.com/miltonmg.sv/', title: 'Instagram' },
 ]
 const Socials = ({ containerStyling, iconStyles }) => {
   return (

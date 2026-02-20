@@ -37,10 +37,10 @@ const page = () => {
 
                 <SelectContent>
                   <SelectGroup>
-                    <a href="/assets/files/MiltonMartinez-Resume.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
+                    <a href="/assets/files/MiltonMartinez-Developer.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
                       <SelectLabel>English CV </SelectLabel>
                     </a>
-                    <a href="/assets/files/MiltonMartinez-CV.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
+                    <a href="/assets/files/MiltonMartinez-Desarrollador.pdf" download="Milton-Martinez-CV.pdf" className="hover:bg-white hover:text-primary">
                       <SelectLabel>Spanish CV</SelectLabel>
                     </a>
                   </SelectGroup>
