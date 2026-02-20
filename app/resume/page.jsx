@@ -57,6 +57,11 @@ const experience = {
   description: "I have experience working as a web developer. Here are some of the places I've worked at.",
   items: [
     {
+      title: "Software Engineer",
+      company: "NICE",
+      date: "2024 - 2025",
+    },
+    {
       title: "Web Developer",
       company: "The Orange Box Agency",
       date: "2023 - 2024",
@@ -207,7 +212,6 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
-                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {
                       experience.items.map((item, index) => {
@@ -224,7 +228,9 @@ const Resume = () => {
                       })
                     }
                   </ul>
-                </ScrollArea>
+                {/* Scroll area if i want to scroll experience information */}
+                {/* <ScrollArea className="h-[400px]">
+                </ScrollArea> */}
               </div>
             </TabsContent>
 
@@ -233,7 +239,6 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
-                <ScrollArea className="h-[100%]">{/* if i want to activate the scroll area i just have to set a hight like 400px */}
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {
                       education.items.map((item, index) => {
@@ -250,7 +255,9 @@ const Resume = () => {
                       })
                     }
                   </ul>
-                </ScrollArea>
+                  {/* if i want to activate the scroll area i just have to set a hight like 400px */}
+                {/* <ScrollArea className="h-[100%]">
+                </ScrollArea> */}
               </div>
             </TabsContent>
 
