@@ -124,7 +124,7 @@ const Work = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
-      <div className='container mx-auto'>
+      <div className='container mx-auto mb-10'>
 
 
         {
