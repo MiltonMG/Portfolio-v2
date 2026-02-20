@@ -13,11 +13,10 @@ const page = () => {
           
           {/* TEXT */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl"> Web Developer </span>
+            <span className="text-3xl"> Web Developer </span>
             
             <h1 className="h1 mb-6">
-              {/* TODO: I have to find a way to change "Hello" word in different languages */}
-              <WordChanger />I'm <br/> <span className="text-accent">Milton</span>
+              <WordChanger /><br/>I'm <span className="text-accent">Milton</span>
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
